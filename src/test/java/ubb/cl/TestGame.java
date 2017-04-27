@@ -23,6 +23,17 @@ public void FirstRolFiveSecondRolFourShouldBeNineTest(){
 			int result= game.getScore();
 			assertEquals(19,result);
 		}
+	@Test
+	public void FirstRolSTrikeSecondRolFourThirdRolFourShouldBeTwentySixTest(){
+			Game game=new Game();
+			game.roll(10);
+			System.out.println(game.getScore());
+			game.roll(4);
+			System.out.println(game.getScore());
+			game.roll(4);
+			int result= game.getScore();
+			assertEquals(26,result);
+		}
 	
 
 }
